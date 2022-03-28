@@ -1,8 +1,38 @@
 [
   {
+    "role": "sa",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "ae",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
     "role": "user",
     "resource": "User",
     "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "sa",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "ae",
+    "resource": "User",
+    "action": "create:any",
     "attributes": "*"
   },
   {
@@ -12,7 +42,19 @@
     "attributes": "*"
   },
   {
-    "role": "user",
+    "role": "admin",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "sa",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "ae",
     "resource": "User",
     "action": "update:any",
     "attributes": "*"
@@ -20,12 +62,282 @@
   {
     "role": "user",
     "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
     "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "sa",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "ae",
+    "resource": "User",
+    "action": "read:any",
     "attributes": "*"
   },
   {
     "role": "user",
     "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "sa",
+    "resource": "Publisher",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "ae",
+    "resource": "Publisher",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Publisher",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Publisher",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "sa",
+    "resource": "Publisher",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "ae",
+    "resource": "Publisher",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Publisher",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Publisher",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "sa",
+    "resource": "Publisher",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "ae",
+    "resource": "Publisher",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Publisher",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Publisher",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "sa",
+    "resource": "Publisher",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "ae",
+    "resource": "Publisher",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Publisher",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Publisher",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "sa",
+    "resource": "Publisher",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "ae",
+    "resource": "Publisher",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Publisher",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Publisher",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "sa",
+    "resource": "Bidder",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "ae",
+    "resource": "Bidder",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Bidder",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Bidder",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "sa",
+    "resource": "Bidder",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "ae",
+    "resource": "Bidder",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Bidder",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Bidder",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "sa",
+    "resource": "Bidder",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "ae",
+    "resource": "Bidder",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Bidder",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Bidder",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "sa",
+    "resource": "Bidder",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "ae",
+    "resource": "Bidder",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Bidder",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Bidder",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "sa",
+    "resource": "Bidder",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "ae",
+    "resource": "Bidder",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Bidder",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Bidder",
     "action": "read:any",
     "attributes": "*"
   }
