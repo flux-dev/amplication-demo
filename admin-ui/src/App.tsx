@@ -9,6 +9,14 @@ import { UserList } from "./user/UserList";
 import { UserCreate } from "./user/UserCreate";
 import { UserEdit } from "./user/UserEdit";
 import { UserShow } from "./user/UserShow";
+import { PublisherList } from "./publisher/PublisherList";
+import { PublisherCreate } from "./publisher/PublisherCreate";
+import { PublisherEdit } from "./publisher/PublisherEdit";
+import { PublisherShow } from "./publisher/PublisherShow";
+import { BidderList } from "./bidder/BidderList";
+import { BidderCreate } from "./bidder/BidderCreate";
+import { BidderEdit } from "./bidder/BidderEdit";
+import { BidderShow } from "./bidder/BidderShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -41,6 +49,20 @@ const App = (): React.ReactElement => {
           edit={UserEdit}
           create={UserCreate}
           show={UserShow}
+        />
+        <Resource
+          name="Publisher"
+          list={PublisherList}
+          edit={PublisherEdit}
+          create={PublisherCreate}
+          show={PublisherShow}
+        />
+        <Resource
+          name="Bidder"
+          list={BidderList}
+          edit={BidderEdit}
+          create={BidderCreate}
+          show={BidderShow}
         />
       </Admin>
     </div>
