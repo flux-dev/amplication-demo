@@ -17,3 +17,20 @@ model User {
   updatedAt DateTime @updatedAt
   username  String   @unique
 }
+
+model Publisher {
+  createdAt   DateTime @default(now())
+  displayName String
+  domainUrl   String
+  done        Boolean?
+  id          String   @id @default(cuid())
+  updatedAt   DateTime @updatedAt
+}
+
+model Bidder {
+  bidderCode     String?
+  bidderSettings Json?
+  createdAt      DateTime @default(now())
+  id             String   @id @default(cuid())
+  updatedAt      DateTime @updatedAt
+}
